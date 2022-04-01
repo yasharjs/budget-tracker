@@ -4,6 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "webpack": "webpack --watch",
+    "build": "webpack",
+    "start:dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "lite-server": "lite-server"
@@ -21,7 +24,19 @@
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
     "mongoose": "^5.5.15",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "webpack": "^4.32.2",
+    "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "devDependencies": {
+    "heroku": "^7.60.1",
+    "sw-precache-webpack-plugin": "^0.11.5",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-pwa-manifest": "^4.1.1"
   }
 }
